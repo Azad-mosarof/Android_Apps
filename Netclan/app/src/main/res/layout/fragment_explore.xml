@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g_card_background"
+    tools:context=".fragments.Explore">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:background="#152B42"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/menu"
+               android:layout_gravity="center"
+               app:tint="@color/g_white"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginHorizontal="20dp"
+               android:orientation="vertical">
+
+                <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Howdy AZAD MOSAROF !!"
+                     android:textColor="@color/g_white"
+                     android:textSize="16sp"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="5dp"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="15dp"
+                       android:layout_height="15dp"
+                       android:src="@drawable/location"
+                       android:layout_gravity="center"
+                       app:tint="@color/g_card_background" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:textSize="14sp"
+                       android:layout_marginStart="10dp"
+                       android:textColor="@color/g_white"
+                       android:text="A-Zone, Durgapur"/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/refine"
+               android:layout_gravity="center"
+               app:tint="@color/g_white" />
+
+       </LinearLayout>
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/tabLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:tabRippleColor="#2DF396F1"
+           app:tabTextColor="@color/g_blue_gray200"
+           app:tabSelectedTextColor = "@color/g_white"
+           app:tabMode="scrollable"
+           app:tabIndicator="@null"
+           android:contentDescription="tab_layout"
+           android:background="#183350"/>
+
+       <androidx.viewpager2.widget.ViewPager2
+           android:id="@+id/viewPagerHome"
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+</FrameLayout>
