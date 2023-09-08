@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#F4F6FB"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/barActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar Activity"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/pieChartActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pie Chart Activity"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/readerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radar Activity"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/lineChartActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Line Chart Activity"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>
